@@ -26,6 +26,9 @@ img {
 a {
    text-decoration: none;
 }
+button {
+   cursor: pointer;
+}
 *,
 *::before,
 *::after {
@@ -209,41 +212,7 @@ a {
    transform: translateY(5px) translateX(2px);
    box-shadow: 2px 4px 0 transparent;
  }
- .backdrop {
-   outline: 11px solid salmon;
-   position: fixed;
-   width: 100%;
-   height: 100%;
-   top: 0;
-   /* background: var(--white-color);
-   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-   border-radius: 4px; */
- }
- .modal {
-   /* position: absolute;
-   width: 528px;
-   min-height: 581px;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%); */
- }
- .is-hidden {
-    /* visibility: hidden;
-    opacity: 0;
-    pointer-events: none; */
- }
 
- .modal-close {
-   /* position: absolute;
-   top: 14px;
-   right: 14px; */
-   
-
-
- }
- .close-icon {
-   
- }
  /* FEATURES */
 .section {
    padding-top: 94px;
@@ -675,5 +644,54 @@ padding-top: 0;
 
 }
 
+/* MODAL */
+
+ .backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(47, 48, 58, 0.4);
+
+ }
+
+ .modal {
+    position: absolute;
+    width: 528px;
+    min-height: 581px;
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+ }
+
+ .is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none; 
+ } 
+
+ .modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
 
 
+
+
+ } 
+
+ .close-icon {
+  fill: currentColor;
+ }
