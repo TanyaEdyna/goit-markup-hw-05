@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,6 +19,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="top top-border">
@@ -83,16 +89,18 @@
           <ul class="portfolio-list list">
             <li class="portfolio-item">
               <a class="portfolio-link" href="#">
-                <img
-                  src="./images/project_1.jpg"
-                  alt="ноутбук з відкритим сайтом"
-                  width="370"
-                />
-                <p class="portfolio-description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+                <div class="portfolio-description-wrap">
+                  <img
+                    src="./images/project_1.jpg"
+                    alt="ноутбук з відкритим сайтом"
+                    width="370"
+                  />
+                  <p class="portfolio-description">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
                 <div class="border-wrap">
                   <h2 class="portfolio-title">Технокряк</h2>
                   <p class="portfolio-text">Веб-сайт</p>
@@ -100,17 +108,19 @@
               </a>
             </li>
             <li class="portfolio-item">
-              <a class="portfolio-link" href="#"
-                ><img
-                  src="./images/project_2.jpg"
-                  alt="два баскетболісти і м'яч"
-                  width="370"
-                />
-                <p class="portfolio-description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+              <a class="portfolio-link" href="#">
+                <div class="portfolio-description-wrap">
+                  <img
+                    src="./images/project_2.jpg"
+                    alt="два баскетболісти і м'яч"
+                    width="370"
+                  />
+                  <p class="portfolio-description">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
                 <div class="border-wrap">
                   <h2 class="portfolio-title">
                     Постер New Orlean vs Golden Star
@@ -121,16 +131,18 @@
             </li>
             <li class="portfolio-item">
               <a class="portfolio-link" href="#">
-                <img
-                  src="./images/project_3.jpg"
-                  alt="назва ресторану"
-                  width="370"
-                />
-                <p class="portfolio-description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+                <div class="portfolio-description-wrap">
+                  <img
+                    src="./images/project_3.jpg"
+                    alt="назва ресторану"
+                    width="370"
+                  />
+                  <p class="portfolio-description">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
                 <div class="border-wrap">
                   <h2 class="portfolio-title">Ресторан Seafood</h2>
                   <p class="portfolio-text">Додаток</p>
@@ -139,12 +151,18 @@
             </li>
             <li class="portfolio-item">
               <a class="portfolio-link" href="#">
-                <img src="./images/project_4.jpg" alt="навушники" width="370" />
-                <p class="portfolio-description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+                <div class="portfolio-description-wrap">
+                  <img
+                    src="./images/project_4.jpg"
+                    alt="навушники"
+                    width="370"
+                  />
+                  <p class="portfolio-description">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
                 <div class="border-wrap">
                   <h2 class="portfolio-title">Проєкт Prime</h2>
                   <p class="portfolio-text">Маркетинг</p>
@@ -153,16 +171,18 @@
             </li>
             <li class="portfolio-item">
               <a class="portfolio-link" href="#">
-                <img
-                  src="./images/project_5.jpg"
-                  alt="дві картонні коробки"
-                  width="370"
-                />
-                <p class="portfolio-description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+                <div class="portfolio-description-wrap">
+                  <img
+                    src="./images/project_5.jpg"
+                    alt="дві картонні коробки"
+                    width="370"
+                  />
+                  <p class="portfolio-description">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
                 <div class="border-wrap">
                   <h2 class="portfolio-title">Проєкт Boxes</h2>
                   <p class="portfolio-text">Додаток</p>
@@ -171,12 +191,14 @@
             </li>
             <li class="portfolio-item">
               <a class="portfolio-link" href="#">
-                <img src="./images/project_6.jpg" alt="монітор" width="370" />
-                <p class="portfolio-description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+                <div class="portfolio-description-wrap">
+                  <img src="./images/project_6.jpg" alt="монітор" width="370" />
+                  <p class="portfolio-description">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
                 <div class="border-wrap">
                   <h2 class="portfolio-title">Inspiration has no Borders</h2>
                   <p class="portfolio-text">Веб-сайт</p>
@@ -185,16 +207,18 @@
             </li>
             <li class="portfolio-item">
               <a class="portfolio-link" href="#">
-                <img
-                  src="./images/project_7.jpg"
-                  alt="розгорнутий журнал"
-                  width="370"
-                />
-                <p class="portfolio-description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+                <div class="portfolio-description-wrap">
+                  <img
+                    src="./images/project_7.jpg"
+                    alt="розгорнутий журнал"
+                    width="370"
+                  />
+                  <p class="portfolio-description">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
                 <div class="border-wrap">
                   <h2 class="portfolio-title">Видання Limited Edition</h2>
                   <p class="portfolio-text">Дизайн</p>
@@ -203,12 +227,18 @@
             </li>
             <li class="portfolio-item">
               <a class="portfolio-link" href="#">
-                <img src="./images/project_8.jpg" alt="етикетка" width="370" />
-                <p class="portfolio-description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+                <div class="portfolio-description-wrap">
+                  <img
+                    src="./images/project_8.jpg"
+                    alt="етикетка"
+                    width="370"
+                  />
+                  <p class="portfolio-description">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
                 <div class="border-wrap">
                   <h2 class="portfolio-title">Проєкт LAB</h2>
                   <p class="portfolio-text">Маркетинг</p>
@@ -217,16 +247,18 @@
             </li>
             <li class="portfolio-item">
               <a class="portfolio-link" href="#">
-                <img
-                  src="./images/project_9.jpg"
-                  alt="людина друкує на клавіатурі ноутбука"
-                  width="370"
-                />
-                <p class="portfolio-description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+                <div class="portfolio-description-wrap">
+                  <img
+                    src="./images/project_9.jpg"
+                    alt="людина друкує на клавіатурі ноутбука"
+                    width="370"
+                  />
+                  <p class="portfolio-description">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
                 <div class="border-wrap">
                   <h2 class="portfolio-title">Growing Business</h2>
                   <p class="portfolio-text">Додаток</p>
@@ -303,5 +335,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
