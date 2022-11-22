@@ -101,13 +101,14 @@ button {
      line-height: 1.14;
      letter-spacing: 0.02em;
      text-decoration: none;
+     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
      
   }
 .link:hover,
 .link:focus {
     color: var(--accent-color);  
     cursor: pointer;
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 .link-contacts {
     color: var(--text-color);
@@ -115,6 +116,7 @@ button {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-contacts:hover,
 .link-contacts:focus {
@@ -134,10 +136,7 @@ button {
   .contacts-userpic {
    fill: currentColor;
   }
-/* .link-contacts:hover {
-   color: var(--accent-color);
-   cursor: pointer;
-} */
+
 
  
  .nav-site .current {
@@ -199,7 +198,7 @@ button {
     border-radius: 4px;
     padding: 10px 32px;
     outline: none;
-    transition-duration: 250ms;
+    transition: color 250ms var(--cubic), opacity 250ms var(--cubic);
     
  }
  .hero-button:hover {
@@ -366,8 +365,7 @@ padding-top: 0;
    width: 44px;
    height: 44px;
    background-size: contain;
-   
-   
+      
  } 
 
  .team-soc-link:hover,
@@ -384,6 +382,7 @@ padding-top: 0;
    height: 100%;
    color: #AFB1B8;
    border-radius: 50%;
+   transition: background-color 250ms var(--cubic), opacity 250ms var(--cubic);
  }
 
  .team-soc-icon {
@@ -421,9 +420,11 @@ padding-top: 0;
    border-radius: 4px;
    width: 100%;
    height: 100%;
+   transition: color 250ms var(--cubic), opacity 250ms var(--cubic);
  }
  .client-icon {
    fill:currentColor;
+   
  }
 
  .client-link:hover,
@@ -511,7 +512,7 @@ padding-top: 0;
 }
 .footer-soc-link:hover,
 .footer-soc-link:focus {
-   background: var(--accent-color);
+   background-color: var(--accent-color);
 }
 .footer-soc-link {
   
@@ -523,6 +524,7 @@ padding-top: 0;
       background: rgba(255, 255, 255, 0.1);
       color: var(--white-color);
       border-radius: 50%;
+      transition: background-color 250ms var(--cubic), opacity 250ms var(--cubic);
 }
 .footer-soc-icon {
    color: currentColor;
@@ -557,6 +559,8 @@ padding-top: 0;
     border-radius: 4px;
     cursor: pointer;
     padding: 6px 22px;
+   transition: background-color 250ms var(--cubic), opacity 250ms var(--cubic), box-shadow 250ms var(--cubic);
+   
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -567,6 +571,7 @@ padding-top: 0;
 }
 .portfolio-item {
    position: relative;
+   transition: box-shadow 250ms var(--cubic), opacity 250ms var(--cubic);
 }
 .portfolio-item:hover,
 .portfolio-item:focus {
@@ -634,6 +639,7 @@ padding-top: 0;
 }
 .portfolio-link {
     text-decoration: none;
+
 }
 .border-wrap {
    border-right: 1px solid var(--border-line-portfolio);
@@ -651,8 +657,10 @@ padding-top: 0;
     width: 100%;
     height: 100%;
     top: 0;
+    z-index: 1;
     background-color: rgba(47, 48, 58, 0.4);
-
+    transition: opacity 300ms var(--cubic), visibility 250ms var(--cubic);
+   
  }
 
  .modal {
@@ -664,9 +672,14 @@ padding-top: 0;
     border-radius: 4px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 300ms var(--cubic);
 
  }
+  .backdrop.is-hidden>.modal {
+   transform: translate(-50%, -50%) scale(0);
+   
+  }
 
  .is-hidden {
     visibility: hidden;
@@ -674,7 +687,7 @@ padding-top: 0;
     pointer-events: none; 
  } 
 
- .modal-close {
+ .modal-btn--close {
     position: absolute;
     top: 8px;
     right: 8px;
